@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c593034a-8108-4ccb-90d4-a28b46c1b771" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VVpeQYGneSMVc9uirkRVj9YBph" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.createqy.XML" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TOOLS\qyTool\src\cn\createqy" />
+      <recent name="D:\TOOLS\qyTool\jarTools" />
+      <recent name="D:\TOOLS\qyTool\src\cn\createqy\Voice\lib" />
+      <recent name="D:\TOOLS\qyTool\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.t1 (2)">
+    <configuration name="Base64Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.createqy.encrypt.Base64Util" />
+      <module name="qyTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.createqy.encrypt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JacobVoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.createqy.Voice.JacobVoi" />
+      <module name="qyTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.createqy.Voice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="t1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.createqy.t1" />
+      <module name="qyTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.createqy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="t1 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TEST.t1" />
+      <module name="qyTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TEST.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="t1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.createqy.test.t1" />
+      <module name="qyTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.createqy.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.t1 (2)" />
+        <item itemvalue="Application.Base64Util" />
+        <item itemvalue="Application.t1 (1)" />
+        <item itemvalue="Application.t1" />
+        <item itemvalue="Application.JacobVoi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c593034a-8108-4ccb-90d4-a28b46c1b771" name="Default Changelist" comment="" />
+      <created>1577348211661</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577348211661</updated>
+      <workItem from="1577348212889" duration="1379000" />
+      <workItem from="1577352169275" duration="614000" />
+      <workItem from="1577354873226" duration="245000" />
+      <workItem from="1577355664508" duration="43000" />
+      <workItem from="1577355745223" duration="1625000" />
+      <workItem from="1578316574896" duration="685000" />
+      <workItem from="1578319051936" duration="4636000" />
+      <workItem from="1578623037239" duration="2005000" />
+      <workItem from="1579501807601" duration="1923000" />
+      <workItem from="1580037029085" duration="2833000" />
+      <workItem from="1580044612465" duration="486000" />
+      <workItem from="1580048447288" duration="172000" />
+      <workItem from="1580048634116" duration="34000" />
+      <workItem from="1580052975149" duration="425000" />
+      <workItem from="1580099345175" duration="628000" />
+      <workItem from="1581561858603" duration="625000" />
+      <workItem from="1582012585362" duration="1369000" />
+      <workItem from="1583219095442" duration="228000" />
+      <workItem from="1583219652808" duration="120000" />
+      <workItem from="1583219782566" duration="308000" />
+      <workItem from="1583220100296" duration="266000" />
+      <workItem from="1583220416699" duration="185000" />
+      <workItem from="1583220678709" duration="29000" />
+      <workItem from="1583220780383" duration="22000" />
+      <workItem from="1583751902735" duration="3559000" />
+      <workItem from="1583755852958" duration="3437000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="584" y="167" key="FileChooserDialogImpl" timestamp="1583220288882">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583220288882" />
+    <state width="1493" height="104" key="GridCell.Tab.0.bottom" timestamp="1583759093773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="104" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583759093773" />
+    <state width="1493" height="104" key="GridCell.Tab.0.center" timestamp="1583759093773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="104" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583759093773" />
+    <state width="1493" height="104" key="GridCell.Tab.0.left" timestamp="1583759093773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="104" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583759093773" />
+    <state width="1493" height="104" key="GridCell.Tab.0.right" timestamp="1583759093773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="104" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583759093773" />
+    <state width="1478" height="258" key="GridCell.Tab.1.bottom" timestamp="1583752788186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583752788186" />
+    <state width="1478" height="258" key="GridCell.Tab.1.center" timestamp="1583752788186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583752788186" />
+    <state width="1478" height="258" key="GridCell.Tab.1.left" timestamp="1583752788186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583752788186" />
+    <state width="1478" height="258" key="GridCell.Tab.1.right" timestamp="1583752788186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583752788186" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1583220798618">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583220798618" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1583220102662">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583220102662" />
+    <state x="445" y="258" width="715" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1583220290342">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="445" y="258" width="715" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1583220290342" />
+  </component>
+</project>

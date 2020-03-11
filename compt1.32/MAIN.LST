@@ -1,0 +1,190 @@
+C51 COMPILER V9.01   MAIN                                                                  12/26/2019 10:35:57 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN MAIN.OBJ
+COMPILER INVOKED BY: D:\keil4\C51\BIN\C51.EXE MAIN.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <reg51.h>
+   2          #include<intrins.h>
+   3          #include"complete.h"
+   4          #include"DelayClass.h"
+   5          #include"TIMEZONE.h"
+   6          #include"new12864.h"
+   7           #include"wdj.h"
+   8          #include"fmq.h"
+   9          #include"KEYBORD.h"
+  10          #include"bjdj.h"
+  11          
+  12          uint t5=0;
+  13          //int ketscan();
+  14          void newthread();
+  15            void judge()
+  16            {
+  17   1              uchar i;
+  18   1              uchar shortdistance=12; 
+  19   1              char temp=0;
+  20   1              for(i=0;i<12;i++)
+  21   1                      {
+  22   2                      if(isArriving[i]==1)
+  23   2                      {
+  24   3                              temp=(i+1)-CurrentFloor;
+  25   3                              if(temp<0)
+  26   3                              {
+  27   4                              temp=-temp;
+  28   4                              }
+  29   3                              
+  30   3                              if(temp<=shortdistance)
+  31   3                              {
+  32   4                              shortdistance=temp;
+  33   4                              floor=i+1;      
+  34   4                              }
+  35   3                      }
+  36   2              }
+  37   1        }
+  38          
+  39            /*
+  40             while(1)
+  41           {
+  42           showTime();
+  43           i++;
+  44           if(i==12)break;
+  45           }
+  46            */
+  47            
+  48          void main()
+  49          {
+  50   1               
+  51   1         LcdInit();
+  52   1         Delay_xms(50);//等待系统稳定
+  53   1       ds1302_init(); //DS1302初始化
+  54   1       Delay_xms(10);
+  55   1         Clr();
+C51 COMPILER V9.01   MAIN                                                                  12/26/2019 10:35:57 PAGE 2   
+
+  56   1         
+  57   1         
+  58   1        gundong();
+  59   1         Clr();
+  60   1         screen1();
+  61   1      
+  62   1         newthread();
+  63   1        
+  64   1        
+  65   1         
+  66   1         while(1)
+  67   1         {  
+  68   2                      if(!isArriving[12])
+  69   2                      {
+  70   3                        Clr();
+  71   3                while(!isArriving[12])
+  72   3                {       door=0;
+  73   4                TR1=0;
+  74   4                screen1();//门开着就判断下一个floor
+  75   4                TR1=1;
+  76   4                delay1ms(50);
+  77   4      
+  78   4                judge();
+  79   4                }
+  80   3                t5=0;
+  81   3                door=1;
+  82   3                Clr();
+  83   3                }
+  84   2                      
+  85   2                TR1=0;
+  86   2      
+  87   2                screen1();
+  88   2                TR1=1;
+  89   2      
+  90   2              
+  91   2                execute(); //电梯运转
+  92   2               
+  93   2         }
+  94   1         
+  95   1                                 
+  96   1                                 
+  97   1               
+  98   1        
+  99   1      
+ 100   1        }
+ 101           
+ 102           
+ 103            void newThread()
+ 104            {
+ 105   1              EA=1;
+ 106   1              ET1=1;
+ 107   1              TMOD=0x10;
+ 108   1              TH0=0xfc;
+ 109   1              TL0=0x17;
+ 110   1              TR1=1;
+ 111   1        }
+ 112          
+ 113          
+ 114                  
+ 115                  void anjian() interrupt 3
+ 116                  {
+ 117   1              uchar i;         
+C51 COMPILER V9.01   MAIN                                                                  12/26/2019 10:35:57 PAGE 3   
+
+ 118   1              TH0=0xfc;
+ 119   1              TL0=0x17;       
+ 120   1              tem=retemp();    //读取一次温度
+ 121   1              key_bord();               //键盘检测一次
+ 122   1      
+ 123   1              if(isArriving[12]==0&&CurrentFloor!=5&&isArriving[0]==0&&isArriving[1]==0&&isArriving[2]==0&&isArriving[3
+             -]==0&&isArriving[4]==0&&isArriving[9]==0&&isArriving[8]==0&&isArriving[7]==0&&isArriving[6]==0&&isArriving[5]==0&&isArri
+             -ving[10]==0&&isArriving[11]==0)
+ 124   1              {
+ 125   2      
+ 126   2                      t5++;
+ 127   2                      if(t5==15)
+ 128   2                      {       
+ 129   3                              isArriving[4]=1;
+ 130   3                              isArriving[12]=1;
+ 131   3                      }
+ 132   2               
+ 133   2              
+ 134   2              
+ 135   2              }
+ 136   1      if(isArriving[13]==1&&isArriving[12]==0)
+ 137   1      {
+ 138   2              Clr();
+ 139   2              while(1)
+ 140   2       {
+ 141   3              showTime();
+ 142   3              i++;
+ 143   3              if(i==12)
+ 144   3              {
+ 145   4              i=0;
+ 146   4              break;
+ 147   4              }
+ 148   3       }
+ 149   2       
+ 150   2       Clr();
+ 151   2       isArriving[13]=0;
+ 152   2      
+ 153   2              }
+ 154   1      
+ 155   1      
+ 156   1              }
+ 157                  
+*** WARNING C290 IN LINE 25 OF MAIN.C: missing return value
+*** WARNING C290 IN LINE 44 OF MAIN.C: missing return value
+*** WARNING C290 IN LINE 24 OF MAIN.C: missing return value
+*** WARNING C290 IN LINE 37 OF MAIN.C: missing return value
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   2630    ----
+   CONSTANT SIZE    =    235    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     59      26
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----       2
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  4 WARNING(S),  0 ERROR(S)
