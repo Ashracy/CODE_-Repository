@@ -1,0 +1,13 @@
+import cn.createqy.autoScripts.*;
+public class TEST
+{
+public void main(String[] args)
+{
+	Detection.set_TALK_DLL_PATH("D:/android自动化脚本框架/talk.dll");
+        	Detection d=Detection.getInstance();//获取对象
+       	d.input_Image("D:/android自动化脚本框架/example/clash.jpg","D:/android自动化脚本框架/example/clash_part.jpg");
+       	System.out.println(" "+d.get_x()+" "+d.get_y()+" "+d.get_sample());//获取匹配最佳点的x坐标,y坐标,相似度
+	d.Image_Cap(1,1,1,1,"D:/android自动化脚本框架/example/clash.jpg","D:/android自动化脚本框架/example/copy.jpg");//在clash.jpg图片中的x坐标为1,y坐标为1的位置截取大小为宽1,高1的图片到copy.jpg照片中
+	d.debug_show_Image();//显示匹配图片
+}
+}

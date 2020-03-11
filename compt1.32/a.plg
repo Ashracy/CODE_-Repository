@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Ray\Desktop\compt1.32\a.uvproj
+Project File Date:  12/25/2019
+
+<h2>Output:</h2>
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling MAIN.c...
+MAIN.C(25): warning C290: missing return value
+MAIN.C(44): warning C290: missing return value
+MAIN.C(24): warning C290: missing return value
+MAIN.C(37): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DS1302_WRITE_TIME?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?BUSY?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SCREEN0?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SCREEN2?MAIN
+*** WARNING L15: MULTIPLE CALL TO SEGMENT
+    SEGMENT: ?PR?_DELAY128?MAIN
+    CALLER1: ?C_C51STARTUP
+    CALLER2: ?PR?ANJIAN?MAIN
+*** WARNING L15: MULTIPLE CALL TO SEGMENT
+    SEGMENT: ?PR?_WRITESTRTOLCD?MAIN
+    CALLER1: ?C_C51STARTUP
+    CALLER2: ?PR?ANJIAN?MAIN
+Program Size: data=95.2 xdata=0 code=3687
+creating hex file from "a"...
+"a" - 0 Error(s), 10 Warning(s).
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling MAIN.c...
+MAIN.C(25): warning C290: missing return value
+MAIN.C(44): warning C290: missing return value
+MAIN.C(24): warning C290: missing return value
+MAIN.C(37): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DS1302_WRITE_TIME?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?BUSY?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SCREEN0?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SCREEN2?MAIN
+*** WARNING L15: MULTIPLE CALL TO SEGMENT
+    SEGMENT: ?PR?_DELAY128?MAIN
+    CALLER1: ?C_C51STARTUP
+    CALLER2: ?PR?ANJIAN?MAIN
+*** WARNING L15: MULTIPLE CALL TO SEGMENT
+    SEGMENT: ?PR?_WRITESTRTOLCD?MAIN
+    CALLER1: ?C_C51STARTUP
+    CALLER2: ?PR?ANJIAN?MAIN
+Program Size: data=95.2 xdata=0 code=3687
+creating hex file from "a"...
+"a" - 0 Error(s), 10 Warning(s).
