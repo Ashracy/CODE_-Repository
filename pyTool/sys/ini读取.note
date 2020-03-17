@@ -2,7 +2,7 @@ import configparser
 
 class ReadConfig:
 	def _init_(self,configpath):
-        self.cf=configparser.ConsifParser()
+        self.cf=configparser.ConfigParser()
         self.cf.read(configpath)
         
         

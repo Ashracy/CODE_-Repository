@@ -1,0 +1,46 @@
+1、创建文件夹或文件引用：
+      File f = new File("文件夹或文件路径");
+      补充说明：文件或文件夹路径分为绝对路径和相对路径
+      1> 绝对路径：文件路径全部，包括盘符、具体目录等；
+      2> 相对路径：相对某个文件路径而言，例如相对 Java 工程；
+2、创建引用对应文件：
+      f.createNewFile();
+3、创建引用对应文件夹：
+      f.mkdir();    // 创建单层目录
+      f.mkdirs();  // 创建多层目录
+4、判断引用对应文件或文件夹是否存在：
+      f.exists();
+5、删除引用对应文件或文件夹：
+      f.delect();  // 当删除文件夹，而文件夹里还有子目录时，无法删除；
+6、判断引用是否为文件夹：
+      f.isDirectory();
+7、判断引用是否为文件：
+      f.isFile();
+8、判断引用对应文件或文件夹是否隐藏：
+      f.isHidden();
+9、判断引用对应文件或文件夹是否可读：
+      f.canRead();
+10、判断引用对应文件或文件夹是否可写：
+      f.canWrite();
+11、判断引用对应文件或文件夹是否可执行：
+      f.canExecute();
+12、获取引用对应文件或文件夹大小：
+      f.length();    // 文件夹获取该方法获取大小不准确，需对文件夹子目录遍历文件大小求和；
+13、获取引用对应文件或文件夹的绝对路径：
+      f.getPath();
+      f.getAbsolutePath();
+14、获取引用对应文件或文件夹的父目录：
+      f.getParent();
+15、获取引用对应文件或文件夹名字：
+      f.getName();
+16、获取引用对应文件夹对应的子文件或子文件夹集合：
+      File[] flist = f.listFiles();
+      eg. 获取引用对应文件下的 .txt 文件
+      File[] flist = f.listFiles(new FileFilter(){
+            public boolean accept(File pathname){
+                     return pathname.getName().endWith(".txt");
+            }
+      })
+     其中匿名对象FileFilter为文件过滤器。
+17、重命名引用对应文件或文件夹：
+     f.renameTo(File f2);

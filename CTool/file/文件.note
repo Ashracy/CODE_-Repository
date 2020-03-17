@@ -1,0 +1,64 @@
+FILE *fp = fopen("demo.txt", "r");
+
+判断文件是否打开成功
+打开文件出错时，fopen() 将返回一个空指针，也就是 NULL，
+if( (fp=fopen("D:\\demo.txt","rb") == NULL ){
+    printf("Fail to open file!\n");
+    exit(0);  //退出程序（结束程序）
+}
+
+
+int fgetc (FILE *fp);从指定的文件中读取一个字符
+fp 为文件指针。fgetc() 读取成功时返回读取到的字符，读取到文件末尾或读取失败时返回EOF。
+
+
+int feof ( FILE * fp );feof() 函数用来判断文件内部指针是否指向了文件末尾
+当指向文件末尾时返回非零值，否则返回零值。
+
+int ferror ( FILE *fp );函数用来判断文件操作是否出错
+出错时返回非零值，否则返回零值。
+
+fputc 是 file output char 的所以，意思是向指定的文件中写入一个字符。
+int fputc ( int ch, FILE *fp );ch 为要写入的字符，fp 为文件指针。fputc() 写入成功时返回写入的字符，失败时返回 EOF
+
+char *fgets ( char *str, int n, FILE *fp );fgets() 函数用来从指定的文件中读取一个字符串，并保存到字符数组中
+str 为字符数组，n 为要读取的字符数目，fp 为文件指针。最多读取一行
+
+fputs() 函数用来向指定的文件写入一个字符串，
+int fputs( char *str, FILE *fp );
+str 为要写入的字符串，fp 为文件指针。写入成功返回非负数，失败返回 EOF
+
+size_t fread ( void *ptr, size_t size, size_t count, FILE *fp );
+size_t fwrite ( void * ptr, size_t size, size_t count, FILE *fp );
+ptr 为内存区块的指针，它可以是数组、变量、结构体等。fread() 中的 ptr 用来存放读取到的数据，fwrite() 中的 ptr 用来存放要写入的数据。
+size：表示每个数据块的字节数。即为数组的每一个对象size
+count：表示要读写的数据块的块数。即为数组的size
+fp：表示文件指针。
+
+size_t 是在 stdio.h 和 stdlib.h 头文件中使用 typedef 定义的数据类型，表示无符号整数，也即非负数，常用来表示数量。
+返回值：返回成功读写的块数，也即 count。如果返回值小于 count： 
+对于 fwrite() 来说，肯定发生了写入错误，可以用 ferror() 函数检测。
+对于 fread() 来说，可能读到了文件末尾，可能发生了错误，可以用 ferror() 或 feof() 检测。
+
+int fscanf ( FILE *fp, char * format, ... );
+int fprintf ( FILE *fp, char * format, ... );例如： 
+
+
+rewind() 用来将位置指针移动到文件开头，前面已经多次使用过
+void rewind ( FILE *fp );
+
+fseek() 用来将位置指针移动到任意位置，它的原型为： 
+int fseek ( FILE *fp, long offset, int origin );
+1)fp 为文件指针，也就是被移动的文件。
+2) offset 为偏移量，也就是要移动的字节数。之所以为 long 类型，是希望移动的范围更大，能处理的文件更大。offset 为正时，向后移动；offset 为负时，向前移动。
+3) origin 为起始位置，也就是从何处开始计算偏移量。C语言规定的起始位置有三种，分别为文件开头、当前位置和文件末尾，每个位置都用对应的常量来表示：
+文件开头
+SEEK_SET
+0
+当前位置
+SEEK_CUR
+1
+文件末尾
+SEEK_END
+2
+

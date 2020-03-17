@@ -1,0 +1,9 @@
+<direct.h>
+mkdir()创建
+rmdir()删除
+_opendir()打开文件夹
+_chdir()切换目录
+_closedir()关闭文件夹
+
+<io.h>
+if (access(path.c_str(), 0) == -1)//返回值为-1，表示不存在
