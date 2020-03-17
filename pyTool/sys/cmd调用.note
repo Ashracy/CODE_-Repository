@@ -1,0 +1,7 @@
+import os
+
+a=os.popen('adb')
+
+text=a.read()//读取
+print(text)
+a.close();//关闭

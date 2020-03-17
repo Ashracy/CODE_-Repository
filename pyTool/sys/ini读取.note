@@ -1,0 +1,22 @@
+import configparser
+
+class ReadConfig:
+	def _init_(self,configpath):
+        self.cf=configparser.ConsifParser()
+        self.cf.read(configpath)
+        
+        
+#读
+a=config.get('zip','MD5')
+
+#添加头
+config.add_section("book")
+#添加内容
+config.set("book", "title", "the python standard library")
+config.set("book", "author", "fredrik lundh")
+#回写
+config.write(open('1.ini', "w"))
+
+
+
+
